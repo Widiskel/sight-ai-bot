@@ -62,11 +62,11 @@ https://x.com/theSightAI/status/1839696985147973783
    ```
 3. run
    ```
-   cp accounts/accounts_tmp.js accounts/account.js
+   cp accounts/accounts_tmp.js accounts/accounts.js
    ```
 5. configure your accounts
    ```
-   nano accounts/account.js
+   nano accounts/accounts.js
    ```
 6. configure the bot config
     ```
