@@ -5,7 +5,8 @@
   "description": "sight-ai testnet Bot",
   "main": "index.js",
   "scripts": {
-    "start": "ncp accounts app/accounts && ncp config app/config && node app/index.js",
+    "start": "node start.js",
+    "setup": "node setup.js",
     "dev": "node index.js",
     "test": "node test.js",
     "build": "rm -rf app && javascript-obfuscator --config build-config.json"
@@ -28,10 +29,9 @@
     "ethers": "^6.13.2",
     "https-proxy-agent": "^7.0.5",
     "moment-timezone": "^0.5.45",
+    "node-fetch": "^3.3.2",
     "twisters": "^1.1.0",
+    "uuid": "^11.0.5",
     "winston": "^3.13.0"
-  },
-  "devDependencies": {
-    "ncp": "^2.0.0"
   }
 }

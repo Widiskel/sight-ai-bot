@@ -19,6 +19,7 @@
 - Eth Holesky Get it from 
   - https://holesky-faucet.pk910.de/
   - https://bwarelabs.com/faucets/ethereum-holesky
+  - https://cloud.google.com/application/web3/faucet/ethereum/holesky
 
 ## Sight Ai Incentive Testnet
 #New Testnet : Sight Ai
@@ -29,7 +30,7 @@ Network : Holesky
 🪂 Register: https://sightai.io/dashboard?referral-code=QYED78
 ➖ Get ETH Holesky faucet
 ➖ Connect New Wallet / Wallet Testnet
-➖ Participate in Arcade
+➖ Participate in Prediction Market Event
 ➖ Daily Check-in
 ➖ Done
 
@@ -46,7 +47,8 @@ https://x.com/theSightAI/status/1839696985147973783
 - Multi Account 
 - Support PK
 - Auto Daily Check IN
-- Auto Play Arcade Game
+- Auto Bet on Prediction Market
+- Auto Claim (IF BET WIN) -> MAYBE SOON
 
 
 ## Setup & Configure BOT
@@ -54,28 +56,22 @@ https://x.com/theSightAI/status/1839696985147973783
 ### Linux
 1. clone project repo
    ```
-   git clone https://github.com/Widiskel/sight-ai-bot.git` and cd to project dir `cd sight-ai-bot
+   git clone https://github.com/Widiskel/sight-ai-bot.git 
+   cd sight-ai-bot
    ```
 2. run
    ```
    npm install
+   npm run setup
    ```
-3. run
-   ```
-   cp accounts/accounts_tmp.js accounts/accounts.js
-   ```
-5. configure your accounts
+3. configure your accounts
    ```
    nano accounts/accounts.js
    ```
-6. configure the bot config
-    ```
-   nano config/config.js
-    ```
-7. to start the app run
-    ```
-    npm run start
-    ```
+4. to start the app run
+   ```
+   npm run start
+   ```
    
 ### Windows
 1. Open your `Command Prompt` or `Power Shell`.
@@ -90,19 +86,14 @@ https://x.com/theSightAI/status/1839696985147973783
 3. Run 
    ```
    npm install
+   npm run setup
    ```
 5. Navigate to `sight-ai-bot` directory. 
-6. Navigate to `accounts` folder and rename `accounts_tmp.js` to `accounts.js`.
-7. Now open `acccounts.js` and setup your accounts. 
-8. Now go back and Navigate to `config` and adjust the `config.js` as needed.
-9. Back to `sight-ai-bot` directory. 
-10.  To start the app open your `Command Prompt` or `Power Shell` again and run
+6. Navigate to `accounts` and configure `accounts.js`.
+7. Back to `sight-ai-bot` directory. 
+8. To start the app open your `Command Prompt` or `Power Shell` again and run
     ```
     npm run start
-    ```
-    or
-    ```
-    node app/index.js
     ```
 
 ## Update Bot
