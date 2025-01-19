@@ -53,7 +53,5 @@ const copyOperations = [
     await copyFile(src, dest);
   }
   console.log(`\nSetup Complete`);
-  console.log(
-    `Open and configure\n- accounts/accounts.js\n- config/config.js\n `
-  );
+  console.log(`Open and configure\n- accounts/accounts.js\n `);
 })();
